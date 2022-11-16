@@ -31,11 +31,11 @@
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_HOST_LTS
-#define CLOUD_IOT_CORE_MQTT_HOST_LTS "mqtt.2030.ltsapis.goog"
+#define CLOUD_IOT_CORE_MQTT_HOST_LTS "iot-sandbox-mqtt.clearblade.com"
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_PORT
-#define CLOUD_IOT_CORE_MQTT_PORT 8883
+#define CLOUD_IOT_CORE_MQTT_PORT 443
 #endif
 
 #endif // CloudIoTCore_h
