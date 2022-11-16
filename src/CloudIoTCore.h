@@ -31,11 +31,11 @@
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_HOST_LTS
-#define CLOUD_IOT_CORE_MQTT_HOST_LTS "iot-sandbox-mqtt.clearblade.com"
+#define CLOUD_IOT_CORE_MQTT_HOST_LTS "us-central1-mqtt.clearblade.com"
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_PORT
-#define CLOUD_IOT_CORE_MQTT_PORT 443
+#define CLOUD_IOT_CORE_MQTT_PORT 8883
 #endif
 
 #endif // CloudIoTCore_h
