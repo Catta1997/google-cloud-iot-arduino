@@ -158,13 +158,13 @@ void CloudIoTCoreMqtt::mqttConnectAsync(bool skip) {
 }
 
 void CloudIoTCoreMqtt::startMQTT() {
-  this->mqttClient->begin(useLts ? CLOUD_IOT_CORE_MQTT_HOST_LTS : CLOUD_IOT_CORE_MQTT_HOST,
+  this->mqttClient->begin(CLOUD_IOT_CORE_MQTT_HOST,
     CLOUD_IOT_CORE_MQTT_PORT, *netClient);
   this->mqttClient->onMessage(messageReceived);
 }
 
 void CloudIoTCoreMqtt::startMQTTAdvanced() {
-  this->mqttClient->begin(useLts ? CLOUD_IOT_CORE_MQTT_HOST_LTS : CLOUD_IOT_CORE_MQTT_HOST,
+  this->mqttClient->begin(CLOUD_IOT_CORE_MQTT_HOST,
     CLOUD_IOT_CORE_MQTT_PORT, *netClient);
   this->mqttClient->onMessageAdvanced(messageReceivedAdvanced);
 }
@@ -255,7 +255,7 @@ void CloudIoTCoreMqtt::logError() {
 }
 
 void CloudIoTCoreMqtt::logConfiguration(bool showJWT) {
-  Serial.println("Connect with " + String(useLts ? CLOUD_IOT_CORE_MQTT_HOST_LTS : CLOUD_IOT_CORE_MQTT_HOST) +
+  Serial.println("Connect with " + String(CLOUD_IOT_CORE_MQTT_HOST) +
       ":" + String(CLOUD_IOT_CORE_MQTT_PORT));
   Serial.println("ClientId: " + device->getClientId());
   if (showJWT) {
@@ -301,8 +301,4 @@ void CloudIoTCoreMqtt::onConnect() {
 
 void CloudIoTCoreMqtt::setLogConnect(boolean enabled) {
   this->logConnect = enabled;
-}
-
-void CloudIoTCoreMqtt::setUseLts(boolean enabled) {
-  this->useLts = enabled;
 }
