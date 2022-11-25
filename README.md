@@ -1,5 +1,7 @@
 WARNING - THIS IS AN INITIAL FORK OF THE GOOGLE CLOUD IOT ARDUINO REPOSITORY, IT IS UNDER DEVELOPMENT FOR RETARGGETING TO CLEARBLADE IOT CORE.  FOR QUESTIONS PLEASE EMAIL iotcore@clearblade.com
 
+Now this library points to thte clearblade us central region on both MQTT and HTTP hosts
+
 Changes from original google cloud iot library:
 1. keepgoing false
 2. remove maxbackoff delay
