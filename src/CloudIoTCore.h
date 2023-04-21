@@ -19,7 +19,7 @@
 #include "CloudIoTCoreDevice.h"
 
 #ifndef CLOUD_IOT_CORE_HTTP_HOST
-#define CLOUD_IOT_CORE_HTTP_HOST "us-central1.clearblade.com"
+#define CLOUD_IOT_CORE_HTTP_HOST "europe-west1.clearblade.com"
 #endif
 
 #ifndef CLOUD_IOT_CORE_HTTP_PORT
@@ -27,7 +27,7 @@
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_HOST
-#define CLOUD_IOT_CORE_MQTT_HOST "us-central1-mqtt.clearblade.com"
+#define CLOUD_IOT_CORE_MQTT_HOST "europe-west1-mqtt.clearblade.com"
 #endif
 
 #ifndef CLOUD_IOT_CORE_MQTT_PORT
